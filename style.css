@@ -14,6 +14,10 @@ body {
     font-family: "PT Sans", sans-serif;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 /******************
       GENERAL
 ******************/
@@ -54,6 +58,8 @@ body {
 .btn-circle {
     border-radius: 50%;
     background-color: #9792e4;
+    height: 45px;
+    width: 45px;
 }
 
 .btn-about-us {
@@ -116,12 +122,12 @@ header a {
     border-radius: 20px;
 }
 
-.col {
+#intro .col {
     text-align: center;
     max-height: 400px;
 }
 
-.card {
+#intro .card {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -180,8 +186,70 @@ header a {
     margin-right: 65px;
 }
 
-
 /*--- /Intro Section ---*/
+
+/*--- Planning Section ---*/
+#planning {
+    background-color: #9792e4;
+}
+
+#planning .container {
+    max-width: 1000px;
+}
+
+#planning .row {
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#planning .col {
+    width: 40%
+}
+
+#planning img {
+    width: 60%;
+}
+
+#planning .col:first-child img {
+    width: 90%;
+}
+
+#planning .col:first-child {
+    margin-top: 8%;
+}
+
+#planning .card {
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 60%;
+    text-align: center;
+    padding: 8% 20px;
+}
+
+#planning .card img {
+    margin: 0 auto;
+}
+
+#planning h2 {
+    margin-top: 28%;
+    color: white;
+}
+
+#planning .row .col:first-child p {
+    margin-top: 10%;
+    color: white;
+}
+
+#planning .row .col:last-child p {
+    line-height: 24px;
+    margin-bottom: 7%;
+}
+
+#planning h3 {
+    margin: 5% 0;
+}
+
+/*--- /Planning Section ---*/
 
 /******************
   RESPONSIVENESS
@@ -214,6 +282,19 @@ header a {
     #intro h3, #intro p, #intro i, #intro button {
         margin: 15px 20px;
     }
+
+    #planning .row {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #planning .col {
+        width: 90%;
+    }
+
+    #planning .card {
+        margin-top: 15%;
+    }
 }
 
 /*--- Mobile ---*/
@@ -223,7 +304,7 @@ header a {
     }
 
     #intro .col {
-        margin: 20px 10%;
+        margin: 20px auto;
     }
 
     #intro .container:first-child .col {
