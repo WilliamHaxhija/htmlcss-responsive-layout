@@ -6,3 +6,103 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/******************
+    TYPOGRAPHY
+******************/
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+/******************
+      GENERAL
+******************/
+.container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*--- Buttons ---*/
+.btn {
+    border: none;
+    border-radius: 15px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #0084fd;
+    color: white;
+    padding: 6px 32px;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    background-color: #9792e4;
+}
+
+.btn-about-us {
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+.btn-its-free {
+    color: #9792e4;
+    padding: 12px 38px;
+    border-radius: 30px;
+}
+/*--- /Buttons ---*/
+
+/******************
+      HEADER
+******************/
+header {
+    background-color: #0084fd;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 24px;
+}
+
+header .row {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/******************
+  RESPONSIVENESS
+******************/
+/*--- Tablet ---*/
+@media screen and (max-width: 992px) {
+    header ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/*--- Mobile ---*/
+@media screen and (max-width: 768px) {}
