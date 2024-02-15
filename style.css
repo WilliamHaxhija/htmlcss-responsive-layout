@@ -73,8 +73,9 @@ h2 {
 
 .btn-its-free {
     color: #9792e4;
-    padding: 12px 38px;
+    padding: 18px 38px;
     border-radius: 30px;
+    width: 30%;
 }
 /*--- /Buttons ---*/
 
@@ -418,6 +419,50 @@ header a {
 }
 /*--- /About us section ---*/
 
+/*--- Get started section ---*/
+#get-started {
+    background-color: #9792e4 ;
+}
+
+#get-started .container {
+    max-width: 1180px;
+    text-align: center;
+}
+
+#get-started .col {
+    width: 50%;
+    margin: auto;
+}
+
+#get-started .col *:not(h1) {
+    color: white;
+}
+
+#get-started p:first-of-type {
+    margin: 30px 0 20px 0;
+}
+
+#get-started p {
+    line-height: 24px;
+}
+
+#get-started h1 {
+    font-size: 70px;
+    color: #fdc15f;
+    margin: 30px 0;
+}
+
+#get-started .col .btn {
+    color: #9792e4;
+    margin: 20px 0;
+}
+
+#get-started small {
+    display: block;
+    margin-bottom: 30px;
+}
+/*--- /Get started section ---*/
+
 /******************
   RESPONSIVENESS
 ******************/
@@ -468,6 +513,11 @@ header a {
     /* benefits section section*/
     #benefits .col {
         width: calc((100% / 2) - 20px);
+    }
+
+    /* Get started section */
+    #get-started .col .btn {
+        width: 50%;
     }
 }
 
@@ -523,5 +573,14 @@ header a {
 
     #about-us .col {
         width: 90%;
+    }
+
+    /* Get started section */
+    #get-started .col {
+        width: 90%;
+    }
+
+    #get-started h1 {
+        font-size: 50px;
     }
 }
