@@ -258,7 +258,7 @@ header a {
     margin: auto;
 }
 
-.heading {
+#testimonials .heading {
     text-align: center;
     padding: 15px 18px;
 }
@@ -312,6 +312,54 @@ header a {
 }
 /*--- /Testimonials Section ---*/
 
+/*--- Benefits section ---*/
+#benefits {
+    background-color: #9792e4;
+}
+
+#benefits .container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+#benefits h2 {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+}
+
+#benefits .col {
+    width: calc((100% / 3) - 20px);
+    background-color: white;
+    border-radius: 20px;
+}
+
+#benefits .card {
+    padding: 20px;
+}
+
+#benefits h1, #benefits h3 {
+    color: #9792e4;
+}
+
+#benefits h1 {
+    font-size: 55px;
+}
+
+#benefits h3, #benefits button {
+    margin: 20px 0;
+}
+
+#benefits p {
+    line-height: 24px;
+}
+
+#benefits button {
+    background-color: #9792e4;
+    padding: 8px 36px;
+}
+/*--- /Benefits section ---*/
 
 /******************
   RESPONSIVENESS
@@ -359,6 +407,11 @@ header a {
     #planning .card {
         margin-top: 15%;
     }
+
+    /* benefits section section*/
+    #benefits .col {
+        width: calc((100% / 2) - 20px);
+    }
 }
 
 /*--- Smartphone ---*/
@@ -394,5 +447,15 @@ header a {
         flex-direction: column;
         text-align: center;
         padding: 8px;
+    }
+
+    /* benefits section section*/
+    #benefits .row {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #benefits .col {
+        width: 90%;
     }
 }
