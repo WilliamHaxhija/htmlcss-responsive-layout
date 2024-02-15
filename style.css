@@ -30,7 +30,7 @@ body {
 }
 
 .col {
-    margin: 5px 5px;
+    margin: 10px 10px;
     overflow: hidden;
 }
 
@@ -48,7 +48,7 @@ body {
 .btn-blue {
     background-color: #0084fd;
     color: white;
-    padding: 6px 32px;
+    padding: 8px 32px;
 }
 
 .btn-circle {
@@ -102,29 +102,33 @@ header a {
       SECTIONS
 ******************/
 /*--- Intro Section ---*/
+#intro .container {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
 #intro .container:first-child .col{
-    width: calc((100% / 3) - 5px);
+    width: calc((100% / 3) - 10px);
 }
 
 #intro .container:last-child .col {
     background-color: #b5ddff;
-    width: calc((100% / 3) - 10px) ;
-    border-radius: 10px;
+    width: calc((100% / 3) - 20px) ;
+    border-radius: 20px;
 }
 
-#intro .col {
+.col {
     text-align: center;
     max-height: 400px;
 }
 
-#intro .card {
+.card {
     height: 100%;
     display: flex;
     flex-direction: column;
 
 }
 
-#intro h3, #intro p, #intro i {
+#intro h3, #intro p, #intro i, #intro button {
     margin: 30px 20px;
 }
 
@@ -139,14 +143,35 @@ header a {
 
 .big-col .card div:first-child {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#intro p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#intro button {
+    width: 160px;
+}
+
+#intro .big-col .card div:first-child i {
+    margin: 0;
 }
 
 #intro i {
     font-size: 60px;
 }
 
+#intro i, #intro h3 {
+    color: #0084fd;;
+}
+
 #intro button i {
     font-size: 16px;
+    color: white;
 }
 
 .big-col .card div img {
@@ -170,7 +195,51 @@ header a {
     .hamburger {
         display: block;
     }
+
+    #intro .big-col .card {
+        flex-direction: column;
+    }
+
+    #intro .big-col .card div:first-child {
+        width: 100%;
+        height: 30%;
+    }
+
+    .big-col .card div img {
+        width: 40%;
+        padding-top: 22px;
+        margin-left: 18px;
+    }
+
+    #intro h3, #intro p, #intro i, #intro button {
+        margin: 15px 20px;
+    }
 }
 
 /*--- Mobile ---*/
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    #intro .row {
+        display: block;
+    }
+
+    #intro .col {
+        margin: 20px 10%;
+    }
+
+    #intro .container:first-child .col {
+        min-width: 80%;
+    }
+
+    #intro .big-col {
+        text-align: center;
+    }
+
+    #intro button {
+        margin: auto;
+    }
+
+    .big-col .card div img {
+        height: 100%;
+        margin: auto;
+    }
+}
