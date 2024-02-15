@@ -26,8 +26,17 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 20px;
 }
 
+.col {
+    margin: 5px 5px;
+    overflow: hidden;
+}
+
+/******************
+     UTILITIES
+******************/
 /*--- Buttons ---*/
 .btn {
     border: none;
@@ -75,7 +84,6 @@ header {
 header .row {
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
 header ul {
@@ -89,6 +97,66 @@ header a {
     text-decoration: none;
     cursor: pointer;
 }
+
+/******************
+      SECTIONS
+******************/
+/*--- Intro Section ---*/
+#intro .container:first-child .col{
+    width: calc((100% / 3) - 5px);
+}
+
+#intro .container:last-child .col {
+    background-color: #b5ddff;
+    width: calc((100% / 3) - 10px) ;
+    border-radius: 10px;
+}
+
+#intro .col {
+    text-align: center;
+    max-height: 400px;
+}
+
+#intro .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#intro h3, #intro p, #intro i {
+    margin: 30px 20px;
+}
+
+#intro .big-col {
+    flex-grow: 1;
+    text-align: start;
+}
+
+#intro .big-col .card {
+    flex-direction: row;
+}
+
+.big-col .card div:first-child {
+    width: 50%;
+}
+
+#intro i {
+    font-size: 60px;
+}
+
+#intro button i {
+    font-size: 16px;
+}
+
+.big-col .card div img {
+    max-height: 90%;
+    margin-top: 65px;
+    margin-right: 65px;
+}
+
+
+/*--- /Intro Section ---*/
 
 /******************
   RESPONSIVENESS
