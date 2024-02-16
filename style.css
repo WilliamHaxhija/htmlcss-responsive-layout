@@ -521,7 +521,12 @@ footer .container {
   RESPONSIVENESS
 ******************/
 /*--- Tablet ---*/
+
 @media screen and (max-width: 992px) {
+    header .container {
+        width: 98%;
+    }
+
     header nav ul {
         display: block;
         max-height: 0;
@@ -583,7 +588,12 @@ footer .container {
 }
 
 /*--- Smartphone ---*/
+
 @media screen and (max-width: 768px) {
+    header .container {
+        width: 81%;
+    }
+
     #intro .row {
         display: block;
     }
